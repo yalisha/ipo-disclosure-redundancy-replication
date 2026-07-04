@@ -1,0 +1,22 @@
+{
+  "ts": "2026-07-04T19:20:02",
+  "canonical_run": "star_token_proxy_full_2019_2023_20260702",
+  "prompt_mode": "cot_v3b_len132_tight",
+  "prefer": "canonical",
+  "sources": {
+    "star_token_proxy_full_2019_2023_20260702": 2728,
+    "star_token_proxy_full_2019_2023_20260702_shard01": 1076,
+    "star_token_proxy_full_2019_2023_20260702_shard02": 1073,
+    "star_token_proxy_full_2019_2023_20260702_shard03": 1076,
+    "star_token_proxy_full_2019_2023_20260702_shard04": 1075,
+    "star_token_proxy_full_2019_2023_20260702_shards": 0
+  },
+  "merged_rows": 7028,
+  "expected_chunks": 7028,
+  "missing_count": 0,
+  "extra_count": 0,
+  "duplicate_count": 0,
+  "missing_ids_sample": [],
+  "extra_ids_sample": [],
+  "duplicates_sample": []
+}

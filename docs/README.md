@@ -14,6 +14,7 @@
 - `00_current/cot_v3b_len132_100firm_calibration_20260703.md`
 - `00_current/cot_v3b_len132_150firm_calibration_20260703.md`
 - `00_current/cot_v3b_len132_200firm_calibration_20260703.md`
+- `00_current/cot_v3b_len132_full543_calibration_20260704.md`
 - `00_current/表2降噪对照与543全样本scoregate_20260703.md`
 - `00_current/表2窗口切分诊断_20260703.md`
 
@@ -33,10 +34,10 @@
 
 ## 当前判断
 
-当前 `cot_v3b + tailfix_bounded + scoregate` 已经完成 543 家企业层 X；新增 50/100/150/200 家 `cot_v3b_len132_tight` 试验显示，固定现有 chunking、只校准摘要长度，可以把 Table 1 量级明显拉近原文，但 strict reproduction 仍是 `NO_PASS_YET`：
+当前 `cot_v3b + tailfix_bounded + scoregate` 已经完成 543 家企业层 X；新增 `cot_v3b_len132_tight` 已经跑完 543 家全样本。固定现有 chunking、只校准摘要长度后，Table 1 量级和 X 构念效度基本通过，但 strict reproduction 仍是 `NO_PASS_YET`：
 
-- 200 家长度校准后 `Summary_len` mean=126.469、`Redundancy_chunk` mean=31.264、企业层 `Redundancy` mean=29.823，已接近原文量级；
+- 全 543 家长度校准后 `Summary_len` mean=128.253、`Redundancy_chunk` mean=30.708、企业层 `Redundancy` mean=29.374，已接近原文量级；
 - Panel B 与 Panel D 仍成立，说明长度校准没有破坏核心构念效度；
-- Table 1 Panel C 方向和量级已恢复，HC1 显著；200 家 firm cluster raw p=0.0660，drop p99 p=0.0606，已接近但仍未达到 5% 显著；
+- Table 1 Panel C 方向和量级已恢复，543 家 firm cluster raw p=0.000056，drop p99 p=0.000106，已达到显著正向；
 - Table 2 的三个经济后果没有复刻；
-- 下一步不应直接把 `cot_v3b_len132_tight` 锁为全样本生产口径；若继续追 X validation，可再扩到 250 家确认 Panel C 是否稳定越过 5% cluster，否则转向原文样本/Y/controls 口径审计。
+- 下一步可以把 `cot_v3b_len132_tight` 作为当前 X measurement 主口径进入外部审阅；但是否用于论文复刻仍要转向原文样本/Y/controls 口径审计，因为 Table 2 经济后果尚未复刻。

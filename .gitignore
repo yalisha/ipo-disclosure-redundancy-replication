@@ -53,6 +53,17 @@ results/summary_len_calibration_200_20260703/*
 !results/summary_len_calibration_200_20260703/*.json
 !results/summary_len_calibration_200_20260703/*.txt
 
+!results/summary_len_calibration_full_543_20260704/
+results/summary_len_calibration_full_543_20260704/*
+!results/summary_len_calibration_full_543_20260704/*.csv
+!results/summary_len_calibration_full_543_20260704/*.json
+!results/summary_len_calibration_full_543_20260704/*.txt
+
+!results/star_token_proxy_full_2019_2023_20260702_shards/
+results/star_token_proxy_full_2019_2023_20260702_shards/*
+!results/star_token_proxy_full_2019_2023_20260702_shards/shard_plan_cot_v3b_len132_tight_20260704.csv
+!results/star_token_proxy_full_2019_2023_20260702_shards/merge_report_cot_v3b_len132_tight_20260704.json
+
 # Selected Table 2 diagnostics only; no full raw-data archive.
 !results/original_paper_table2_probe_full_2019_2023_csmar_patent_20260702/
 results/original_paper_table2_probe_full_2019_2023_csmar_patent_20260702/*

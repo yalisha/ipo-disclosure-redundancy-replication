@@ -1,0 +1,74 @@
+# Ignore everything by default; this repo is a lightweight review package.
+*
+
+# Root files
+!.gitignore
+!README.md
+
+# Current docs
+!docs/
+docs/*
+!docs/README.md
+!docs/00_current/
+docs/00_current/*
+!docs/00_current/*.md
+
+# Core scripts
+!scripts/
+scripts/*
+!scripts/*.py
+
+# Dictionary inputs for Panel D-style validation
+!data/
+data/*
+!data/dictionaries/
+data/dictionaries/*
+!data/dictionaries/*.csv
+!data/dictionaries/*.json
+
+# Review result bundles
+!results/
+results/*
+!results/summary_len_calibration_50_20260703/
+results/summary_len_calibration_50_20260703/*
+!results/summary_len_calibration_50_20260703/*.csv
+!results/summary_len_calibration_50_20260703/*.json
+!results/summary_len_calibration_50_20260703/*.txt
+
+!results/summary_len_calibration_100_20260703/
+results/summary_len_calibration_100_20260703/*
+!results/summary_len_calibration_100_20260703/*.csv
+!results/summary_len_calibration_100_20260703/*.json
+!results/summary_len_calibration_100_20260703/*.txt
+
+!results/summary_len_calibration_150_20260703/
+results/summary_len_calibration_150_20260703/*
+!results/summary_len_calibration_150_20260703/*.csv
+!results/summary_len_calibration_150_20260703/*.json
+!results/summary_len_calibration_150_20260703/*.txt
+
+!results/summary_len_calibration_200_20260703/
+results/summary_len_calibration_200_20260703/*
+!results/summary_len_calibration_200_20260703/*.csv
+!results/summary_len_calibration_200_20260703/*.json
+!results/summary_len_calibration_200_20260703/*.txt
+
+# Selected Table 2 diagnostics only; no full raw-data archive.
+!results/original_paper_table2_probe_full_2019_2023_csmar_patent_20260702/
+results/original_paper_table2_probe_full_2019_2023_csmar_patent_20260702/*
+!results/original_paper_table2_probe_full_2019_2023_csmar_patent_20260702/*descriptives*.csv
+!results/original_paper_table2_probe_full_2019_2023_csmar_patent_20260702/*regressions*.csv
+
+!results/original_paper_table2_probe_base543_csmar_patent_20260703/
+results/original_paper_table2_probe_base543_csmar_patent_20260703/*
+!results/original_paper_table2_probe_base543_csmar_patent_20260703/*descriptives*.csv
+!results/original_paper_table2_probe_base543_csmar_patent_20260703/*regressions*.csv
+
+!results/original_paper_table2_probe_partial_cot_v3b_534_csmar_patent_20260703/
+results/original_paper_table2_probe_partial_cot_v3b_534_csmar_patent_20260703/*
+!results/original_paper_table2_probe_partial_cot_v3b_534_csmar_patent_20260703/*descriptives*.csv
+!results/original_paper_table2_probe_partial_cot_v3b_534_csmar_patent_20260703/*regressions*.csv
+
+!results/table2_listing_window_diagnostic_20260703/
+results/table2_listing_window_diagnostic_20260703/*
+!results/table2_listing_window_diagnostic_20260703/*regressions*.csv

@@ -83,3 +83,7 @@ results/original_paper_table2_probe_partial_cot_v3b_534_csmar_patent_20260703/*
 !results/table2_listing_window_diagnostic_20260703/
 results/table2_listing_window_diagnostic_20260703/*
 !results/table2_listing_window_diagnostic_20260703/*regressions*.csv
+
+!results/table2_len132_tight_audit_20260705/
+results/table2_len132_tight_audit_20260705/*
+!results/table2_len132_tight_audit_20260705/*.csv

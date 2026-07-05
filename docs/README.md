@@ -1,6 +1,6 @@
 # Docs Index
 
-日期：2026-07-04
+日期：2026-07-05
 
 ## 当前优先阅读
 
@@ -15,6 +15,7 @@
 - `00_current/cot_v3b_len132_150firm_calibration_20260703.md`
 - `00_current/cot_v3b_len132_200firm_calibration_20260703.md`
 - `00_current/cot_v3b_len132_full543_calibration_20260704.md`
+- `00_current/table2_len132_tight_audit_20260705.md`
 - `00_current/表2降噪对照与543全样本scoregate_20260703.md`
 - `00_current/表2窗口切分诊断_20260703.md`
 
@@ -39,5 +40,6 @@
 - 全 543 家长度校准后 `Summary_len` mean=128.253、`Redundancy_chunk` mean=30.708、企业层 `Redundancy` mean=29.374，已接近原文量级；
 - Panel B 与 Panel D 仍成立，说明长度校准没有破坏核心构念效度；
 - Table 1 Panel C 方向和量级已恢复，543 家 firm cluster raw p=0.000056，drop p99 p=0.000106，已达到显著正向；
-- Table 2 的三个经济后果没有复刻；
+- 已用真正的 `cot_v3b_len132_tight` firm ranking 重跑 Table 2 审计：`FInvention` 和 `BHAR` 回到负号但很弱，`FSales_Growth` 仍为正号，结论仍是 `NO_PASS_YET`；
+- 当前最大 replication gap 转向 controls/data：`NumIndSeg`、`NumProdSeg`、`ScopeLen` 缺失，`Underwriter` 当前来源几乎全为 0，不能视作原文口径；
 - 下一步可以把 `cot_v3b_len132_tight` 作为当前 X measurement 主口径进入外部审阅；但是否用于论文复刻仍要转向原文样本/Y/controls 口径审计，因为 Table 2 经济后果尚未复刻。

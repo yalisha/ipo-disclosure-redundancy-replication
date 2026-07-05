@@ -6,7 +6,7 @@ The current task is not to claim a finished paper replication. It is to audit wh
 
 ## Current Bottom Line
 
-As of 2026-07-04:
+As of 2026-07-05:
 
 - The original `cot_v3b + tailfix_bounded + scoregate` path has produced a 543-firm enterprise-level redundancy variable.
 - The newer `cot_v3b_len132_tight` path now covers the full 543-firm sample and calibrates summary length while keeping the existing chunking fixed.
@@ -18,7 +18,8 @@ As of 2026-07-04:
   - Panel B score-redundancy relation is strongly negative.
   - Panel D innovation-word-rate relation remains strongly negative.
   - Panel C is positive and significant under firm-clustered standard errors.
-- Strict reproduction status remains `NO_PASS_YET`, mainly because the downstream Table 2 economic-outcome regressions are not reproduced.
+- Strict reproduction status remains `NO_PASS_YET`. The latest audit uses the actual `cot_v3b_len132_tight` firm ranking in Table 2: `FInvention` and `BHAR` turn negative but remain weak; `FSales_Growth` remains positive.
+- The main replication gap has shifted to empirical-variable engineering: `NumIndSeg`, `NumProdSeg`, and `ScopeLen` are missing, and the current `Underwriter` source is almost unusable because Sponsor is mostly `None`.
 
 ## Suggested Review Order
 
@@ -29,9 +30,10 @@ Read these first:
 3. `docs/00_current/交给Pro模型_当前复刻情况与问题清单_20260703.md`
 4. `docs/00_current/cot_v3b_len132_200firm_calibration_20260703.md`
 5. `docs/00_current/cot_v3b_len132_full543_calibration_20260704.md`
-6. `docs/00_current/表2降噪对照与543全样本scoregate_20260703.md`
-7. `docs/00_current/表2窗口切分诊断_20260703.md`
-8. `docs/00_current/prompt_给Pro模型_原文复刻诊断_20260703.md`
+6. `docs/00_current/table2_len132_tight_audit_20260705.md`
+7. `docs/00_current/表2降噪对照与543全样本scoregate_20260703.md`
+8. `docs/00_current/表2窗口切分诊断_20260703.md`
+9. `docs/00_current/prompt_给Pro模型_原文复刻诊断_20260703.md`
 
 ## Key Outputs Included
 
@@ -40,6 +42,7 @@ Read these first:
 - `results/summary_len_calibration_150_20260703/`
 - `results/summary_len_calibration_200_20260703/`
 - `results/summary_len_calibration_full_543_20260704/`
+- `results/table2_len132_tight_audit_20260705/`
 - selected Table 2 regression and descriptive outputs
 - current scripts needed to inspect the measurement and diagnostics
 - `data/dictionaries/` innovation-disclosure dictionary files used in Panel D-style checks

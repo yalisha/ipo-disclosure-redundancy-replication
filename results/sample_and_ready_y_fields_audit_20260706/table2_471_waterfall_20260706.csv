@@ -1,0 +1,21 @@
+﻿sample,step,N
+full_2019_2023_current_master,universe,543
+full_2019_2023_current_master,Redundancy nonmissing,543
+full_2019_2023_current_master,FInvention nonmissing,531
+full_2019_2023_current_master,BHAR nonmissing,541
+full_2019_2023_current_master,FSales_Growth nonmissing,538
+full_2019_2023_current_master,all three outcomes nonmissing,528
+full_2019_2023_current_master,all controls nonmissing,524
+full_2019_2023_current_master,FInvention regression complete,514
+full_2019_2023_current_master,BHAR regression complete,524
+full_2019_2023_current_master,FSales regression complete,524
+w2_2019_2022_current_master,universe,474
+w2_2019_2022_current_master,Redundancy nonmissing,474
+w2_2019_2022_current_master,FInvention nonmissing,464
+w2_2019_2022_current_master,BHAR nonmissing,474
+w2_2019_2022_current_master,FSales_Growth nonmissing,471
+w2_2019_2022_current_master,all three outcomes nonmissing,461
+w2_2019_2022_current_master,all controls nonmissing,459
+w2_2019_2022_current_master,FInvention regression complete,449
+w2_2019_2022_current_master,BHAR regression complete,459
+w2_2019_2022_current_master,FSales regression complete,459

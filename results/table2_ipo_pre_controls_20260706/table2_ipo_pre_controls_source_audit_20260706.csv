@@ -1,0 +1,23 @@
+﻿variable,source,N,mean,std,p25,median,p75,original_mean,original_median
+Underwriter_ipocsne_pool_count,"IPO_Ipocsne main underwriters; Top10 variants, full/weighted/count",539,0.7161410018552876,0.4512880641945855,0.0,1.0,1.0,0.574,1.0
+Underwriter_ipocsne_pool_grsprc_full,"IPO_Ipocsne main underwriters; Top10 variants, full/weighted/count",539,0.6679035250463822,0.47140289515449696,0.0,1.0,1.0,0.574,1.0
+Underwriter_ipocsne_pool_grsprc_weighted,"IPO_Ipocsne main underwriters; Top10 variants, full/weighted/count",539,0.7161410018552876,0.4512880641945855,0.0,1.0,1.0,0.574,1.0
+Underwriter_ipocsne_annual_count,"IPO_Ipocsne main underwriters; Top10 variants, full/weighted/count",539,0.7217068645640075,0.4485748388294389,0.0,1.0,1.0,0.574,1.0
+Underwriter_ipocsne_annual_grsprc_full,"IPO_Ipocsne main underwriters; Top10 variants, full/weighted/count",539,0.6493506493506493,0.4776165902685578,0.0,1.0,1.0,0.574,1.0
+Underwriter_ipocsne_annual_grsprc_weighted,"IPO_Ipocsne main underwriters; Top10 variants, full/weighted/count",539,0.7179962894248608,0.4503931285515234,0.0,1.0,1.0,0.574,1.0
+Underwriter_ipo,"IPO_Ipocsne main underwriters; annual gross-proceeds Top10, full-deal credit",539,0.6493506493506493,0.4776165902685578,0.0,1.0,1.0,0.574,1.0
+RD_Staff_ipo,"IPO_Iponoem, Stattype=8 rows containing 研发 / Stattype=0 total staff",542,0.27979192467691216,0.20173788157186026,0.13976033279057837,0.22394923271507006,0.38742649602213763,0.305,0.24
+RD_Staff_ipo_exact_core,"IPO_Iponoem, exact core R&D labels / total staff",542,0.25064180406504954,0.20784389730629244,0.11552641933982133,0.20095645095645095,0.3619309082589796,0.305,0.24
+employee_total_available,"IPO_Iponoem, Stattype=0",542,,,,,,,
+Size_ipo_pre,IPO pre-listing annual StateTypeCode=A; latest <= listing_year-1 or strict lag1,541,20.73816875174228,0.9977739582375157,20.072745729954843,20.52520527975769,21.173929238891734,20.741,20.533
+Lev_ipo_pre,IPO pre-listing annual StateTypeCode=A; latest <= listing_year-1 or strict lag1,541,0.35715289137778655,0.18178416305289855,0.21151015786052654,0.334522031757461,0.4730665334413748,0.356,0.334
+ROA_ipo_pre,IPO pre-listing annual StateTypeCode=A; latest <= listing_year-1 or strict lag1,541,0.08977438977504826,0.16952730192374832,0.05815599344644401,0.09723059308034623,0.15182656581258056,0.094,0.1
+RD_Asset_ipo_pre,IPO pre-listing annual StateTypeCode=A; latest <= listing_year-1 or strict lag1,28,0.0381736100198248,0.04752466273492749,0.007607919523158398,0.017803033171802853,0.04155182979193653,0.105,0.073
+FSales_Growth_ipo_pre_to_Lp1_w1p,IPO pre-listing annual StateTypeCode=A; latest <= listing_year-1 or strict lag1,535,1.0250821199022853,3.5841362088358273,0.07203230005846083,0.3622481305692451,0.7859690395085878,0.53,0.18
+Size_ipo_lag1,IPO pre-listing annual StateTypeCode=A; latest <= listing_year-1 or strict lag1,458,20.78513518295905,0.9976266346386886,20.138973186208172,20.555757481319535,21.234750449305274,20.741,20.533
+Lev_ipo_lag1,IPO pre-listing annual StateTypeCode=A; latest <= listing_year-1 or strict lag1,458,0.3624150824078186,0.18392690543148557,0.21250347891729504,0.33916558810883124,0.47694699577914873,0.356,0.334
+ROA_ipo_lag1,IPO pre-listing annual StateTypeCode=A; latest <= listing_year-1 or strict lag1,458,0.10025132116513503,0.12712044460479388,0.06001756287559817,0.10018115940307827,0.15163862892289529,0.094,0.1
+RD_Asset_ipo_lag1,IPO pre-listing annual StateTypeCode=A; latest <= listing_year-1 or strict lag1,25,0.0374811699575979,0.047337399083620064,0.007986915609376984,0.01805402013166257,0.039153071759940754,0.105,0.073
+FSales_Growth_ipo_lag1_to_Lp1_w1p,IPO pre-listing annual StateTypeCode=A; latest <= listing_year-1 or strict lag1,454,0.6613714652969129,1.63947661128413,0.042594694811845954,0.3234448707757489,0.6748935445796024,0.53,0.18
+ipo_pre_fin_year_available,latest common balance/income annual row <= listing_year-1,541,,,,,,,
+ipo_lag1_fin_year_available,strict common balance/income annual row = listing_year-1,458,,,,,,,

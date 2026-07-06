@@ -108,6 +108,10 @@ results/descriptive_stats_management_world_20260706/*
 !results/descriptive_stats_management_world_20260706/*.xlsx
 !results/descriptive_stats_management_world_20260706/*.png
 
+!results/fsales_growth_window_sensitivity_20260706/
+results/fsales_growth_window_sensitivity_20260706/*
+!results/fsales_growth_window_sensitivity_20260706/*.csv
+
 !results/controls_data_needs_20260706/
 results/controls_data_needs_20260706/*
 !results/controls_data_needs_20260706/*.csv
@@ -119,6 +123,27 @@ results/table2_existing_controls_patch_20260706/*
 !results/table2_listing_year_segment_controls_20260706/
 results/table2_listing_year_segment_controls_20260706/*
 !results/table2_listing_year_segment_controls_20260706/*.csv
+
+!results/table2_ipo_pre_controls_20260706/
+results/table2_ipo_pre_controls_20260706/*
+!results/table2_ipo_pre_controls_20260706/*.csv
+
+!results/y_bhar_fsales_definition_audit_20260706/
+results/y_bhar_fsales_definition_audit_20260706/*
+!results/y_bhar_fsales_definition_audit_20260706/*.csv
+results/y_bhar_fsales_definition_audit_20260706/*raw_rows*.csv
+
+!results/bhar_official_market_return_audit_20260706/
+results/bhar_official_market_return_audit_20260706/*
+!results/bhar_official_market_return_audit_20260706/*.csv
+
+!results/table2_data_processing_breakpoints_20260706/
+results/table2_data_processing_breakpoints_20260706/*
+!results/table2_data_processing_breakpoints_20260706/*.csv
+
+!results/sample_and_ready_y_fields_audit_20260706/
+results/sample_and_ready_y_fields_audit_20260706/*
+!results/sample_and_ready_y_fields_audit_20260706/*.csv
 
 !results/glm4_tokenizer_chunk_audit_20260705/
 results/glm4_tokenizer_chunk_audit_20260705/*

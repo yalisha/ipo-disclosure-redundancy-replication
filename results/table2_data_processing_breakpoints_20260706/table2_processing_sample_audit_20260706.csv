@@ -1,0 +1,15 @@
+﻿sample,step,N
+full_2019_2023,universe,543
+full_2019_2023,Redundancy nonmissing,543
+full_2019_2023,BHAR nonmissing,541
+full_2019_2023,FSales_Growth nonmissing,538
+full_2019_2023,all controls nonmissing,524
+full_2019_2023,BHAR regression complete,524
+full_2019_2023,FSales regression complete,524
+w2_2019_2022,universe,474
+w2_2019_2022,Redundancy nonmissing,474
+w2_2019_2022,BHAR nonmissing,474
+w2_2019_2022,FSales_Growth nonmissing,471
+w2_2019_2022,all controls nonmissing,459
+w2_2019_2022,BHAR regression complete,459
+w2_2019_2022,FSales regression complete,459

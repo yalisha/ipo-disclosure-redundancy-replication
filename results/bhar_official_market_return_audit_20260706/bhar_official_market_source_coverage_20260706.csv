@@ -1,0 +1,3 @@
+﻿source,rows,sample_firm_coverage,date_min,date_max,note
+TRD_Year,2680,542.0,2019,2025,official annual individual stock returns; IPO listing-year Yretwd is often missing
+TRD_Cndalym,9594,,2019-07-29,2026-03-05,official comprehensive daily market returns by composite market type

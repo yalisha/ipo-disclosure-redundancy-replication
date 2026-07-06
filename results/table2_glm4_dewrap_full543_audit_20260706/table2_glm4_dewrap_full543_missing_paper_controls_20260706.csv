@@ -1,0 +1,4 @@
+﻿variable,available_in_master,nonmissing_N,original_mean,note
+NumIndSeg,False,0,0.854,required by original Table 2 controls
+NumProdSeg,False,0,1.475,required by original Table 2 controls
+ScopeLen,False,0,5.671,required by original Table 2 controls

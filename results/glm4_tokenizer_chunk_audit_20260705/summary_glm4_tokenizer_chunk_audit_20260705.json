@@ -1,0 +1,14 @@
+{
+  "tokenizer": "THUDM/glm-4-9b-chat-hf",
+  "tokenizer_source_url": "https://huggingface.co/zai-org/glm-4-9b-chat-hf",
+  "tokenizer_class": "PreTrainedTokenizerFast",
+  "tokenizer_vocab_size": 151329,
+  "section_n": 543,
+  "chunk_n": 7028,
+  "section_glm_total": 37584029.0,
+  "section_proxy_total": 26410967.0,
+  "chunk_glm_mean": 5297.880478087649,
+  "chunk_proxy_mean": 3758.1937962435973,
+  "section_glm_proxy_ratio_mean": 1.4209272362910004,
+  "chunk_glm_proxy_ratio_mean": 1.4070974705580246
+}

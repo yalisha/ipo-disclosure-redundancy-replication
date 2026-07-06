@@ -69,6 +69,12 @@ def extract_json(text: str) -> dict:
         # items: {"items":[{...}},{"custom_id":...}]}. The schema has no nested
         # item objects, so this repair is narrowly scoped to item boundaries.
         repaired = re.sub(r'\}\s*\}\s*,\s*\{\s*"custom_id"', r'},{"custom_id"', payload)
+        # Occasionally a stray non-JSON Arabic glyph appears after a complete
+        # item object and before the comma separator.
+        repaired = re.sub(r"}\s*[\u0600-\u06FF]+\s*(?=,|\])", r"}", repaired)
+        # Same boundary-only repair for other isolated glyphs emitted between
+        # complete item objects, e.g. }兑,{...}. Do not touch text inside strings.
+        repaired = re.sub(r"}\s*[^\s,\]\{\}:]+\s*(?=,|\])", r"}", repaired)
         # Occasionally the model closes the items array after the first item and
         # then continues emitting sibling item objects.
         repaired = re.sub(r'\]\s*\}\s*,\s*\{\s*"custom_id"', r',{"custom_id"', repaired)

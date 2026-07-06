@@ -1,0 +1,21 @@
+{
+  "ts": "2026-07-06T08:45:55",
+  "canonical_run": "glm4_dewrap_join_full543_20260705",
+  "prompt_mode": "cot_v3b_len132_tight",
+  "sources": {
+    "glm4_dewrap_join_full543_20260705": 1638,
+    "glm4_dewrap_join_full543_20260705_shard01": 1769,
+    "glm4_dewrap_join_full543_20260705_shard02": 1769,
+    "glm4_dewrap_join_full543_20260705_shard03": 1769,
+    "glm4_dewrap_join_full543_20260705_shard04": 1761,
+    "glm4_dewrap_join_full543_20260705_shards": 0
+  },
+  "merged_rows": 8706,
+  "expected_chunks": 8706,
+  "missing_count": 0,
+  "extra_count": 0,
+  "duplicate_count": 0,
+  "missing_ids_sample": [],
+  "extra_ids_sample": [],
+  "duplicates_sample": []
+}

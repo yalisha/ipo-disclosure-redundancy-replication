@@ -1,0 +1,14 @@
+{
+  "source": "results/glm4_dewrap_rechunk_trial_20260705/dewrap_join",
+  "out": "results/glm4_dewrap_join_pilot5_20260705",
+  "sample_codes": [
+    "688123",
+    "688311",
+    "688038",
+    "688172",
+    "688693"
+  ],
+  "firms": 5,
+  "chunks": 78,
+  "chunk_glm4_tokens_mean": 3819.7948717948716
+}

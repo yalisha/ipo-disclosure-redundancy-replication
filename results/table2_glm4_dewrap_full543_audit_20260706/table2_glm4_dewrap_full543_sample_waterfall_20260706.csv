@@ -1,0 +1,17 @@
+﻿scope,step,N
+full_2019_2023,2019-2023: firms with len132_tight X,543
+full_2019_2023,with listing_year,541
+full_2019_2023,FInvention nonmissing,531
+full_2019_2023,BHAR nonmissing,541
+full_2019_2023,FSales_Growth nonmissing,538
+full_2019_2023,current controls complete,541
+full_2019_2023,all 3 Y + current controls complete,528
+full_2019_2023,all 3 Y + original paper controls complete,0
+w2_2019_2022,2019-2022: firms with len132_tight X,474
+w2_2019_2022,with listing_year,474
+w2_2019_2022,FInvention nonmissing,464
+w2_2019_2022,BHAR nonmissing,474
+w2_2019_2022,FSales_Growth nonmissing,471
+w2_2019_2022,current controls complete,474
+w2_2019_2022,all 3 Y + current controls complete,461
+w2_2019_2022,all 3 Y + original paper controls complete,0

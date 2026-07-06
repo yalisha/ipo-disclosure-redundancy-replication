@@ -1,0 +1,21 @@
+{
+  "ts": "2026-07-05T19:22:42",
+  "canonical_run": "glm4_dewrap_join_pilot100_20260705",
+  "prompt_mode": "cot_v3b_len132_tight",
+  "sources": {
+    "glm4_dewrap_join_pilot100_20260705": 821,
+    "glm4_dewrap_join_pilot100_20260705_shard01": 206,
+    "glm4_dewrap_join_pilot100_20260705_shard02": 202,
+    "glm4_dewrap_join_pilot100_20260705_shard03": 202,
+    "glm4_dewrap_join_pilot100_20260705_shard04": 207,
+    "glm4_dewrap_join_pilot100_20260705_shards": 0
+  },
+  "merged_rows": 1638,
+  "expected_chunks": 1638,
+  "missing_count": 0,
+  "extra_count": 0,
+  "duplicate_count": 0,
+  "missing_ids_sample": [],
+  "extra_ids_sample": [],
+  "duplicates_sample": []
+}

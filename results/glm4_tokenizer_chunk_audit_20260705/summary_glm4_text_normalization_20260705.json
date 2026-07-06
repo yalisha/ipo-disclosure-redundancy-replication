@@ -1,0 +1,45 @@
+{
+  "paper": {
+    "firms": 552,
+    "chunks": 8683,
+    "text_len_mean": 3866.817,
+    "chunk_num_mean": 18.191,
+    "lnN_tech_mean": 10.962
+  },
+  "raw_layout": {
+    "total_tokens": 37584029.0,
+    "mean_tokens": 69215.52302025782,
+    "mean_ln_tokens": 11.095,
+    "approx_chunks_4000": 9666,
+    "firm_avg_chunks_4000": 17.801,
+    "weighted_chunk_num_4000": 19.402,
+    "avg_tokens_per_chunk_4000": 3888.271
+  },
+  "dewrap_join": {
+    "total_tokens": 33026541.0,
+    "mean_tokens": 60822.359,
+    "mean_ln_tokens": 10.966,
+    "approx_chunks_4000": 8534,
+    "firm_avg_chunks_4000": 15.716,
+    "weighted_chunk_num_4000": 17.122,
+    "avg_tokens_per_chunk_4000": 3869.995
+  },
+  "dewrap_space": {
+    "total_tokens": 35126365.0,
+    "mean_tokens": 64689.438,
+    "mean_ln_tokens": 11.028,
+    "approx_chunks_4000": 9058,
+    "firm_avg_chunks_4000": 16.681,
+    "weighted_chunk_num_4000": 18.165,
+    "avg_tokens_per_chunk_4000": 3877.938
+  },
+  "compact": {
+    "total_tokens": 30820566.0,
+    "mean_tokens": 56759.79,
+    "mean_ln_tokens": 10.898,
+    "approx_chunks_4000": 7977,
+    "firm_avg_chunks_4000": 14.691,
+    "weighted_chunk_num_4000": 15.979,
+    "avg_tokens_per_chunk_4000": 3863.679
+  }
+}

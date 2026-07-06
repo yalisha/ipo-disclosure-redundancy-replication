@@ -14,6 +14,12 @@
 跑完后再合并进入候选 X universe
 ```
 
+执行后修正：旧补抓 run 的 `star_first_batch_missing_20260706` 是 `--max-chars 4000` 旧 chunk base，只适合作为文本抽取和备份摘要验证。主 X 必须使用 full543 的同口径，即 `dewrap_join + GLM tokenizer + 4000 token boundary split`。因此实际可并入主 X 的运行目录是：
+
+```text
+results/glm4_dewrap_join_first_batch25_20260706
+```
+
 ## 为什么要补这 25 家
 
 - CSMAR `IPO_Ipobasic` + `IPO_Cobasic` 可重建 2019-2023 科创板首次发行上市 universe：567 家。
@@ -93,12 +99,21 @@ CNINFO 可找到的文本是：
 
 ## 补跑命令
 
-本轮只跑 25 家首批缺口，不重跑 full543：
+旧 char chunk 版本已经跑通，目标 25 家 772/772 个 chunk 都有结果；但该版本不能直接并入主 X。
+
+主口径版本先重切：
+
+```bash
+python scripts/build_first_batch25_glm4_dewrap_join_20260706.py
+```
+
+再跑 LLM：
 
 ```bash
 python scripts/run_ipo_redundancy_codex_cli_20260628.py \
-  --run-name star_first_batch_missing_20260706 \
+  --run-name glm4_dewrap_join_first_batch25_20260706 \
   --prompt-mode cot_v3b_len132_tight \
+  --max-chunks-per-call 20 \
   --sec-code 688001,688002,688003,688005,688006,688007,688008,688009,688010,688011,688012,688015,688016,688018,688019,688020,688022,688028,688029,688033,688066,688088,688122,688333,688388
 ```
 
@@ -106,15 +121,44 @@ python scripts/run_ipo_redundancy_codex_cli_20260628.py \
 
 ```bash
 python scripts/run_ipo_redundancy_codex_cli_20260628.py \
-  --run-name star_first_batch_missing_20260706 \
+  --run-name glm4_dewrap_join_first_batch25_20260706 \
   --prompt-mode cot_v3b_len132_tight \
   --aggregate-only
+```
+
+本轮实际已完成：25 家、410 个 GLM chunk、410/410 摘要完成。
+
+## 主口径补跑结果
+
+| 指标 | 当前 25 家 | 原文 |
+| --- | ---: | ---: |
+| Chunk_num mean | 17.815 | 18.191 |
+| Text_len mean | 3809.610 | 3866.817 |
+| Summary_len_proxy mean | 122.417 | 132.678 |
+| Redundancy_chunk_proxy mean | 32.278 | 32.176 |
+| lnN_tech firm mean | 10.997 | 10.962 |
+| Redundancy_proxy firm mean | 31.351 | 29.074 |
+
+Panel B：
+
+```text
+Spearman rho = -0.513
+p = 7.51e-29
+低评分组 Redundancy_chunk_proxy median = 34.539
+高评分组 Redundancy_chunk_proxy median = 29.459
+```
+
+判断：
+
+```text
+首批25家主口径结果可并入候选 X universe；
+但该 25 家是特殊首批样本，不单独作为正式 measurement gate。
 ```
 
 ## 跑完后的合并原则
 
 1. 从当前 full543 中剔除 `688688`、`688717`。
-2. 把首批 25 家 `cot_v3b_len132_tight` 结果并入。
+2. 把 `results/glm4_dewrap_join_first_batch25_20260706/firm_metrics_glm4_cot_v3b_len132_tight_20260705.csv` 并入。
 3. `688287` 暂不作为标准 IPO X 合并；若为了解释 CSMAR universe 差异，可单列转板样本。
 4. 合并后候选标准 IPO X 样本预期约为 565 家，再继续查明为什么原文 Table 1 是 552 家。
 5. 只有在补齐 X 样本后，才重新跑 Table 1 描述统计与 Table 2 的 `FInvention/BHAR/FSales_Growth`。

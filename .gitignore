@@ -196,6 +196,12 @@ results/glm4_dewrap_join_full543_20260705/*
 !results/glm4_dewrap_join_full543_20260705/firm_metrics_glm4_cot_v3b_len132_tight_20260705.csv
 !results/glm4_dewrap_join_full543_20260705/diagnostics_glm4_cot_v3b_len132_tight_20260705.json
 
+!results/glm4_dewrap_join_first_batch25_20260706/
+results/glm4_dewrap_join_first_batch25_20260706/*
+!results/glm4_dewrap_join_first_batch25_20260706/*.csv
+!results/glm4_dewrap_join_first_batch25_20260706/*.json
+!results/glm4_dewrap_join_first_batch25_20260706/*.txt
+
 !results/glm4_dewrap_join_full543_20260705_shards/
 results/glm4_dewrap_join_full543_20260705_shards/*
 !results/glm4_dewrap_join_full543_20260705_shards/*.csv

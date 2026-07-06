@@ -1,0 +1,59 @@
+﻿ts,run_name,prompt_mode,label,sec_code,sec_name,announcement_id,chunks,first_chunk_index,last_chunk_index,chunk_chars,chunk_compact_chars,prompt_chars,items_returned,model,reasoning_effort,total_tokens,input_tokens,cached_tokens,output_tokens,reasoning_tokens,token_usage_raw
+2026-07-06T21:09:05,glm4_dewrap_join_first_batch25_20260706,cot_v3b_len132_tight,688001_chunks_0001_0017,688001,华兴源创,1206416030,17,1,17,114404,104898,117515,17,codex-cli-default,low,94170,,,,,"tokens used
+94,170"
+2026-07-06T21:10:14,glm4_dewrap_join_first_batch25_20260706,cot_v3b_len132_tight,688002_chunks_0001_0015,688002,睿创微纳,1206430547,15,1,15,93540,85900,96497,15,codex-cli-default,low,84389,,,,,"tokens used
+84,389"
+2026-07-06T21:11:53,glm4_dewrap_join_first_batch25_20260706,cot_v3b_len132_tight,688003_chunks_0001_0018,688003,天准科技,1206430546,18,1,18,116763,108835,119951,18,codex-cli-default,low,94771,,,,,"tokens used
+94,771"
+2026-07-06T21:12:56,glm4_dewrap_join_first_batch25_20260706,cot_v3b_len132_tight,688006_chunks_0001_0014,688006,杭可科技,1206433065,14,1,14,88001,82688,90881,14,codex-cli-default,low,81038,,,,,"tokens used
+81,038"
+2026-07-06T21:13:50,glm4_dewrap_join_first_batch25_20260706,cot_v3b_len132_tight,688008_chunks_0001_0010,688008,澜起科技,1206441634,10,1,10,66502,61411,69074,10,codex-cli-default,low,58626,,,,,"tokens used
+58,626"
+2026-07-06T21:14:53,glm4_dewrap_join_first_batch25_20260706,cot_v3b_len132_tight,688005_chunks_0001_0012,688005,容百科技,1206447899,12,1,12,80027,74693,82753,12,codex-cli-default,low,61799,,,,,"tokens used
+61,799"
+2026-07-06T21:16:22,glm4_dewrap_join_first_batch25_20260706,cot_v3b_len132_tight,688007_chunks_0001_0016,688007,光峰科技,1206447905,16,1,16,108451,101293,111485,16,codex-cli-default,low,95724,,,,,"tokens used
+95,724"
+2026-07-06T21:17:46,glm4_dewrap_join_first_batch25_20260706,cot_v3b_len132_tight,688009_chunks_0001_0020,688009,中国通号,1206447900,20,1,20,136044,126453,139386,20,codex-cli-default,low,112080,,,,,"tokens used
+112,080"
+2026-07-06T21:18:26,glm4_dewrap_join_first_batch25_20260706,cot_v3b_len132_tight,688009_chunks_0021_0026,688009,中国通号,1206447900,6,21,26,35426,32245,37690,6,codex-cli-default,low,42101,,,,,"tokens used
+42,101"
+2026-07-06T21:19:47,glm4_dewrap_join_first_batch25_20260706,cot_v3b_len132_tight,688010_chunks_0001_0014,688010,福光股份,1206447921,14,1,14,87642,80411,90522,14,codex-cli-default,low,81230,,,,,"tokens used
+81,230"
+2026-07-06T21:21:12,glm4_dewrap_join_first_batch25_20260706,cot_v3b_len132_tight,688011_chunks_0001_0016,688011,新光光电,1206447906,16,1,16,101280,94648,104314,16,codex-cli-default,low,79956,,,,,"tokens used
+79,956"
+2026-07-06T21:21:58,glm4_dewrap_join_first_batch25_20260706,cot_v3b_len132_tight,688012_chunks_0001_0009,688012,中微公司,1206447929,9,1,9,56479,50787,58974,9,codex-cli-default,low,57077,,,,,"tokens used
+57,077"
+2026-07-06T21:22:55,glm4_dewrap_join_first_batch25_20260706,cot_v3b_len132_tight,688018_chunks_0001_0012,688018,乐鑫科技,1206447930,12,1,12,78653,73108,81379,12,codex-cli-default,low,70449,,,,,"tokens used
+70,449"
+2026-07-06T21:23:58,glm4_dewrap_join_first_batch25_20260706,cot_v3b_len132_tight,688019_chunks_0001_0012,688019,安集科技,1206447918,12,1,12,77034,71359,79760,12,codex-cli-default,low,57817,,,,,"tokens used
+57,817"
+2026-07-06T21:25:35,glm4_dewrap_join_first_batch25_20260706,cot_v3b_len132_tight,688333_chunks_0001_0020,688333,铂力特,1206447901,20,1,20,132303,122157,135645,20,codex-cli-default,low,111319,,,,,"tokens used
+111,319"
+2026-07-06T21:26:04,glm4_dewrap_join_first_batch25_20260706,cot_v3b_len132_tight,688333_chunks_0021_0024,688333,铂力特,1206447901,4,21,24,25618,24098,27728,4,codex-cli-default,low,21064,,,,,"tokens used
+21,064"
+2026-07-06T21:27:22,glm4_dewrap_join_first_batch25_20260706,cot_v3b_len132_tight,688016_chunks_0001_0015,688016,心脉医疗,1206452544,15,1,15,97947,88069,100904,15,codex-cli-default,low,86696,,,,,"tokens used
+86,696"
+2026-07-06T21:28:57,glm4_dewrap_join_first_batch25_20260706,cot_v3b_len132_tight,688029_chunks_0001_0020,688029,南微医学,1206452542,20,1,20,132411,120330,135753,20,codex-cli-default,low,107293,,,,,"tokens used
+107,293"
+2026-07-06T21:29:37,glm4_dewrap_join_first_batch25_20260706,cot_v3b_len132_tight,688029_chunks_0021_0026,688029,南微医学,1206452542,6,21,26,38581,35915,40845,6,codex-cli-default,low,46065,,,,,"tokens used
+46,065"
+2026-07-06T21:30:49,glm4_dewrap_join_first_batch25_20260706,cot_v3b_len132_tight,688088_chunks_0001_0016,688088,虹软科技,1206452540,16,1,16,113844,105176,116878,16,codex-cli-default,low,90460,,,,,"tokens used
+90,460"
+2026-07-06T21:32:02,glm4_dewrap_join_first_batch25_20260706,cot_v3b_len132_tight,688122_chunks_0001_0017,688122,西部超导,1206452543,17,1,17,104134,96140,107245,17,codex-cli-default,low,81571,,,,,"tokens used
+81,571"
+2026-07-06T21:33:12,glm4_dewrap_join_first_batch25_20260706,cot_v3b_len132_tight,688015_chunks_0001_0015,688015,交控科技,1206456398,15,1,15,101273,93821,104230,15,codex-cli-default,low,86882,,,,,"tokens used
+86,882"
+2026-07-06T21:34:12,glm4_dewrap_join_first_batch25_20260706,cot_v3b_len132_tight,688020_chunks_0001_0010,688020,方邦股份,1206456394,10,1,10,60502,54965,63074,10,codex-cli-default,low,62122,,,,,"tokens used
+62,122"
+2026-07-06T21:35:36,glm4_dewrap_join_first_batch25_20260706,cot_v3b_len132_tight,688022_chunks_0001_0018,688022,瀚川智能,1206456541,18,1,18,117345,109705,120533,18,codex-cli-default,low,97552,,,,,"tokens used
+97,552"
+2026-07-06T21:36:57,glm4_dewrap_join_first_batch25_20260706,cot_v3b_len132_tight,688028_chunks_0001_0016,688028,沃尔德,1206456405,16,1,16,105036,95240,108070,16,codex-cli-default,low,94372,,,,,"tokens used
+94,372"
+2026-07-06T21:38:31,glm4_dewrap_join_first_batch25_20260706,cot_v3b_len132_tight,688033_chunks_0001_0020,688033,天宜上佳,1206456407,20,1,20,126754,116311,130096,20,codex-cli-default,low,109879,,,,,"tokens used
+109,879"
+2026-07-06T21:39:11,glm4_dewrap_join_first_batch25_20260706,cot_v3b_len132_tight,688033_chunks_0021_0027,688033,天宜上佳,1206456407,7,21,27,44600,41454,46941,7,codex-cli-default,low,35420,,,,,"tokens used
+35,420"
+2026-07-06T21:40:32,glm4_dewrap_join_first_batch25_20260706,cot_v3b_len132_tight,688066_chunks_0001_0016,688066,航天宏图,1206456395,16,1,16,102808,96575,105842,16,codex-cli-default,low,90969,,,,,"tokens used
+90,969"
+2026-07-06T21:42:11,glm4_dewrap_join_first_batch25_20260706,cot_v3b_len132_tight,688388_chunks_0001_0019,688388,嘉元科技,1206456409,19,1,19,115097,104910,118362,19,codex-cli-default,low,99989,,,,,"tokens used
+99,989"

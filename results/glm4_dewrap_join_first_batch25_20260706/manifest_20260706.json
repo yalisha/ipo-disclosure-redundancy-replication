@@ -1,0 +1,15 @@
+{
+  "source_run": "results/star_first_batch_missing_20260706",
+  "out_dir": "results/glm4_dewrap_join_first_batch25_20260706",
+  "normalization_mode": "dewrap_join",
+  "tokenizer": "THUDM/glm-4-9b-chat-hf",
+  "max_tokens": 4000,
+  "firms": 25,
+  "chunks": 410,
+  "chunk_glm4_tokens_mean": 3809.609756097561,
+  "tech_text_glm4_tokens_mean": 62484.24,
+  "excluded_extra_codes": [
+    "688099",
+    "688188"
+  ]
+}

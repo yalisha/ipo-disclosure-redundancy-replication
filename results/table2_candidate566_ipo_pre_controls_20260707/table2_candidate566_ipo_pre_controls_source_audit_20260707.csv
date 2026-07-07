@@ -1,0 +1,39 @@
+﻿variable,source,N,mean,std,p25,median,p75,original_mean,original_median
+Size,existing parquet financial controls; latest annual before first_trade_date,566,20.786610995861682,1.0075265121623116,20.12187750427055,20.578792566157663,21.243458203262325,,
+Lev,existing parquet financial controls; latest annual before first_trade_date,566,0.3586817653582407,0.18601257678135452,0.21160315885732056,0.3351002935212238,0.4784659430456859,,
+ROA,existing parquet financial controls; latest annual before first_trade_date,566,0.09259782200473685,0.18564423282906103,0.05849638556892875,0.10160055598131935,0.1573712164710354,,
+Offerfee,IPO_Ipobasic.Fltcst,566,18.323647525081828,0.4868768385720717,17.967248275223515,18.267184906819388,18.616142079345764,,
+Age,firm_info EstablishDate to first_trade_date,566,2.603079155196054,0.4125446844842682,2.345588581659806,2.651785215793083,2.8924989247147295,,
+ScopeLen,STK_LISTEDCOINFOANL.BusinessScope log(clean UTF-8 bytes),566,5.66899658813703,,,,,5.671,
+ScopeLen_char,STK_LISTEDCOINFOANL.BusinessScope log(clean characters),566,4.612955414060193,,,,,5.671,
+ScopeLen_gb18030,STK_LISTEDCOINFOANL.BusinessScope log(clean GB18030 bytes),566,5.274568585750427,,,,,5.671,
+ScopeLen_log1p_char,STK_LISTEDCOINFOANL.BusinessScope log1p(clean characters),566,4.62755256530404,,,,,5.671,
+NumIndSeg,main_else_operating_ln1p,554,0.883584177669302,0.3695415382738683,0.6931471805599453,0.6931471805599453,1.0986122886681098,0.854,0.693
+NumIndSeg,main_only_ln1p,451,0.8859794611274969,0.36080716822286496,0.6931471805599453,0.6931471805599453,1.0986122886681098,0.854,0.693
+NumProdSeg,main_else_operating_ln1p,558,1.501485413499864,0.34467279191803096,1.3862943611198906,1.6094379124341003,1.791759469228055,1.475,1.609
+NumProdSeg,main_only_ln1p,453,1.516437961714206,0.34775397279611475,1.3862943611198906,1.6094379124341003,1.791759469228055,1.475,1.609
+segment_rows_valid,FN_Fn048 listing_year rows after filters,9954,,,,,,,
+segment_firms_any,FN_Fn048 listing_year rows after filters,564,,,,,,,
+RD_Staff,"PT_LCRDSPENDING listing_year-1, StateTypeCode=1, Source=IPO preferred",479,0.3032129436325678,0.1871706390346272,0.15894999999999998,0.24239999999999998,0.40595000000000003,0.305,0.24
+Underwriter_ipocsne_pool_count,"IPO_Ipocsne main underwriters; Top10 variants, full/weighted/count",564,0.7216312056737588,0.44859381495784934,0.0,1.0,1.0,0.574,1.0
+Underwriter_ipocsne_pool_grsprc_full,"IPO_Ipocsne main underwriters; Top10 variants, full/weighted/count",564,0.6702127659574468,0.47055308235956844,0.0,1.0,1.0,0.574,1.0
+Underwriter_ipocsne_pool_grsprc_weighted,"IPO_Ipocsne main underwriters; Top10 variants, full/weighted/count",564,0.7216312056737588,0.44859381495784934,0.0,1.0,1.0,0.574,1.0
+Underwriter_ipocsne_annual_count,"IPO_Ipocsne main underwriters; Top10 variants, full/weighted/count",564,0.7216312056737588,0.44859381495784934,0.0,1.0,1.0,0.574,1.0
+Underwriter_ipocsne_annual_grsprc_full,"IPO_Ipocsne main underwriters; Top10 variants, full/weighted/count",564,0.6418439716312057,0.4798839451720923,0.0,1.0,1.0,0.574,1.0
+Underwriter_ipocsne_annual_grsprc_weighted,"IPO_Ipocsne main underwriters; Top10 variants, full/weighted/count",564,0.7163120567375887,0.45118736006934906,0.0,1.0,1.0,0.574,1.0
+Underwriter_ipo,"IPO_Ipocsne main underwriters; annual gross-proceeds Top10, full-deal credit",564,0.6418439716312057,0.4798839451720923,0.0,1.0,1.0,0.574,1.0
+RD_Staff_ipo,"IPO_Iponoem, Stattype=8 rows containing 研发 / Stattype=0 total staff",565,0.27997708334488997,0.20204275478002087,0.14018691588785046,0.2242562929061785,0.3864406779661017,0.305,0.24
+RD_Staff_ipo_exact_core,"IPO_Iponoem, exact core R&D labels / total staff",565,0.2504329120560601,0.20816734023814631,0.11439114391143912,0.20105820105820105,0.36200716845878134,0.305,0.24
+employee_total_available,"IPO_Iponoem, Stattype=0",565,,,,,,,
+Size_ipo_pre,IPO pre-listing annual StateTypeCode=A; latest <= listing_year-1 or strict lag1,566,20.74765068217816,1.0067146198371733,20.072691871231804,20.537640399816432,21.189987794773746,20.741,20.533
+Lev_ipo_pre,IPO pre-listing annual StateTypeCode=A; latest <= listing_year-1 or strict lag1,566,0.3561496245158049,0.18267867517052486,0.20783425571041775,0.33372428842194957,0.4755597058243371,0.356,0.334
+ROA_ipo_pre,IPO pre-listing annual StateTypeCode=A; latest <= listing_year-1 or strict lag1,566,0.0918837006072321,0.16682688965664372,0.05869444140684594,0.10018115940307827,0.1565791650457717,0.094,0.1
+RD_Asset_ipo_pre,IPO pre-listing annual StateTypeCode=A; latest <= listing_year-1 or strict lag1,32,0.04502707503154215,0.06253253197426908,0.006061877896564473,0.017803033171802853,0.05575992363417748,0.105,0.073
+FSales_Growth_ipo_pre_to_Lp1_w1p,IPO pre-listing annual StateTypeCode=A; latest <= listing_year-1 or strict lag1,560,0.970739226602675,3.2503348907174185,0.06392397645963595,0.3646511001759681,0.7818574697929022,0.53,0.18
+Size_ipo_lag1,IPO pre-listing annual StateTypeCode=A; latest <= listing_year-1 or strict lag1,483,20.79381553874848,1.007660786303871,20.132125867369723,20.565190824582388,21.244143508999453,20.741,20.533
+Lev_ipo_lag1,IPO pre-listing annual StateTypeCode=A; latest <= listing_year-1 or strict lag1,483,0.360967041373383,0.18488789629987493,0.21061350691035297,0.3378301167643902,0.47797172286427797,0.356,0.334
+ROA_ipo_lag1,IPO pre-listing annual StateTypeCode=A; latest <= listing_year-1 or strict lag1,483,0.10218081732717205,0.1253103169319121,0.060643056797268086,0.10170658911775664,0.1564099917905912,0.094,0.1
+RD_Asset_ipo_lag1,IPO pre-listing annual StateTypeCode=A; latest <= listing_year-1 or strict lag1,29,0.04513912308255868,0.06384291990067802,0.006470931264502641,0.01805402013166257,0.04874810388792385,0.105,0.073
+FSales_Growth_ipo_lag1_to_Lp1_w1p,IPO pre-listing annual StateTypeCode=A; latest <= listing_year-1 or strict lag1,479,0.6498688763096743,1.5835486479432777,0.043556698036750434,0.32963852908830105,0.6806925282988159,0.53,0.18
+ipo_pre_fin_year_available,latest common balance/income annual row <= listing_year-1,566,,,,,,,
+ipo_lag1_fin_year_available,strict common balance/income annual row = listing_year-1,483,,,,,,,

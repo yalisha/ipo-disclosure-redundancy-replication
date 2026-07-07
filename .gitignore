@@ -202,6 +202,16 @@ results/glm4_dewrap_join_first_batch25_20260706/*
 !results/glm4_dewrap_join_first_batch25_20260706/*.json
 !results/glm4_dewrap_join_first_batch25_20260706/*.txt
 
+!results/glm4_dewrap_join_candidate566_20260707/
+results/glm4_dewrap_join_candidate566_20260707/*
+!results/glm4_dewrap_join_candidate566_20260707/*.csv
+!results/glm4_dewrap_join_candidate566_20260707/*.json
+!results/glm4_dewrap_join_candidate566_20260707/*.txt
+
+!results/table2_candidate566_ipo_pre_controls_20260707/
+results/table2_candidate566_ipo_pre_controls_20260707/*
+!results/table2_candidate566_ipo_pre_controls_20260707/*.csv
+
 !results/glm4_dewrap_join_full543_20260705_shards/
 results/glm4_dewrap_join_full543_20260705_shards/*
 !results/glm4_dewrap_join_full543_20260705_shards/*.csv

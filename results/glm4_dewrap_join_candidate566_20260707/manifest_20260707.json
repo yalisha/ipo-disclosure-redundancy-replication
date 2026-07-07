@@ -1,0 +1,13 @@
+{
+  "firms": 566,
+  "chunks": 9083,
+  "excluded_extra": [
+    "688688",
+    "688717"
+  ],
+  "transfer_not_included": "688287",
+  "paper_firm_n": 552,
+  "paper_chunk_n": 8683,
+  "firm_n_gap_vs_paper": 14,
+  "chunk_n_gap_vs_paper": 400
+}

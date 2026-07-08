@@ -1,0 +1,6 @@
+﻿shard,source_run_name,firm_n,chunk_n,first_code,last_code
+1,glm4_dewrap_join_glm_next100_table2_shard1_20260708,20,376,688358,688208
+2,glm4_dewrap_join_glm_next100_table2_shard2_20260708,20,373,688090,688516
+3,glm4_dewrap_join_glm_next100_table2_shard3_20260708,20,398,688360,688500
+4,glm4_dewrap_join_glm_next100_table2_shard4_20260708,20,320,688981,688065
+5,glm4_dewrap_join_glm_next100_table2_shard5_20260708,20,289,688055,688095

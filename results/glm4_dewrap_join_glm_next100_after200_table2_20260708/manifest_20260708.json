@@ -1,0 +1,13 @@
+{
+  "created_at": "2026-07-08",
+  "purpose": "third 100 Table2 firms not yet run by SiliconFlow GLM-4-32B GLM200",
+  "prompt_mode": "cot_v3b_len132_tight",
+  "firm_n": 100,
+  "chunk_n": 1655,
+  "source_dirs": [
+    "glm4_dewrap_join_full543_20260705",
+    "glm4_dewrap_join_first_batch25_20260706"
+  ],
+  "selection_rule": "Table2 471 firms excluding existing GLM200 codes, sorted by first_trade_date then code, take next 100",
+  "suffix": "all"
+}

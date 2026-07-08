@@ -134,6 +134,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--table2-master", type=Path, default=TABLE2_MASTER)
     parser.add_argument("--firm-metrics", type=Path, default=DEFAULT_FIRM_METRICS)
     parser.add_argument("--label", default="glm300_proxy_tailmerge1600_floor50")
+    parser.add_argument("--doc-out", type=Path, default=DOC_OUT)
     return parser.parse_args()
 
 
@@ -324,8 +325,15 @@ def build_sample_audit(df: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
-def write_doc(label: str, master_out: Path, regs: pd.DataFrame, desc: pd.DataFrame, sample: pd.DataFrame) -> None:
-    DOC_OUT.parent.mkdir(parents=True, exist_ok=True)
+def write_doc(
+    label: str,
+    master_out: Path,
+    regs: pd.DataFrame,
+    desc: pd.DataFrame,
+    sample: pd.DataFrame,
+    doc_out: Path,
+) -> None:
+    doc_out.parent.mkdir(parents=True, exist_ok=True)
     main_regs = regs[regs["spec"].isin(["paper_exact_current_fin_fe", "paper_exact_ipo_pre_fin_fe"])].copy()
     extra_regs = regs[regs["spec"].str.startswith("rd_staff_extra")].copy()
     focus = main_regs[main_regs["spec"].eq("paper_exact_ipo_pre_fin_fe")].set_index("dep_var")
@@ -407,7 +415,7 @@ def write_doc(label: str, master_out: Path, regs: pd.DataFrame, desc: pd.DataFra
         f"- sample audit：`{RUN_DIR / f'{label}_strict_sample_audit_{DATE_TAG}.csv'}`",
         "",
     ]
-    DOC_OUT.write_text("\n".join(doc), encoding="utf-8")
+    doc_out.write_text("\n".join(doc), encoding="utf-8")
 
 
 def main() -> None:
@@ -426,11 +434,11 @@ def main() -> None:
     regs.to_csv(regs_out, index=False, encoding="utf-8-sig")
     desc.to_csv(desc_out, index=False, encoding="utf-8-sig")
     sample.to_csv(sample_out, index=False, encoding="utf-8-sig")
-    write_doc(args.label, master_out, regs, desc, sample)
+    write_doc(args.label, master_out, regs, desc, sample, args.doc_out)
     print(
         json.dumps(
             {
-                "doc": str(DOC_OUT),
+                "doc": str(args.doc_out),
                 "master": str(master_out),
                 "regressions": str(regs_out),
                 "firm_n": int(df["sec_code"].nunique()),

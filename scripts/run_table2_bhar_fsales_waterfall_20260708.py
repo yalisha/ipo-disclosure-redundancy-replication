@@ -88,6 +88,8 @@ WATERFALL_STEPS = [
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--master", type=Path, default=DEFAULT_MASTER)
+    parser.add_argument("--prefix", default="table2_bhar_fsales")
+    parser.add_argument("--doc-out", type=Path, default=DOC_OUT)
     return parser.parse_args()
 
 
@@ -243,8 +245,14 @@ def build_delta_table(waterfall: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
-def write_doc(master: Path, waterfall: pd.DataFrame, delta: pd.DataFrame) -> None:
-    DOC_OUT.parent.mkdir(parents=True, exist_ok=True)
+def write_doc(
+    master: Path,
+    waterfall: pd.DataFrame,
+    delta: pd.DataFrame,
+    doc_out: Path,
+    prefix: str,
+) -> None:
+    doc_out.parent.mkdir(parents=True, exist_ok=True)
     main = waterfall[waterfall["y_variant"].eq("winsor") & waterfall["step"].ne("07_plus_rd_staff_extra_not_main")].copy()
     extra = waterfall[waterfall["step"].eq("07_plus_rd_staff_extra_not_main")].copy()
     final = main[main["step"].eq("06_plus_scope_segments_paper_exact")].set_index("outcome")
@@ -302,11 +310,11 @@ def write_doc(master: Path, waterfall: pd.DataFrame, delta: pd.DataFrame) -> Non
         "",
         "## Outputs",
         "",
-        f"- waterfall：`{RUN_DIR / f'table2_bhar_fsales_waterfall_{DATE_TAG}.csv'}`",
-        f"- delta：`{RUN_DIR / f'table2_bhar_fsales_raw_vs_winsor_{DATE_TAG}.csv'}`",
+        f"- waterfall：`{RUN_DIR / f'{prefix}_waterfall_{DATE_TAG}.csv'}`",
+        f"- delta：`{RUN_DIR / f'{prefix}_raw_vs_winsor_{DATE_TAG}.csv'}`",
         "",
     ]
-    DOC_OUT.write_text("\n".join(doc), encoding="utf-8")
+    doc_out.write_text("\n".join(doc), encoding="utf-8")
 
 
 def main() -> None:
@@ -315,12 +323,12 @@ def main() -> None:
     df = load_master(args.master)
     waterfall = build_waterfall(df)
     delta = build_delta_table(waterfall)
-    waterfall_out = RUN_DIR / f"table2_bhar_fsales_waterfall_{DATE_TAG}.csv"
-    delta_out = RUN_DIR / f"table2_bhar_fsales_raw_vs_winsor_{DATE_TAG}.csv"
+    waterfall_out = RUN_DIR / f"{args.prefix}_waterfall_{DATE_TAG}.csv"
+    delta_out = RUN_DIR / f"{args.prefix}_raw_vs_winsor_{DATE_TAG}.csv"
     waterfall.to_csv(waterfall_out, index=False, encoding="utf-8-sig")
     delta.to_csv(delta_out, index=False, encoding="utf-8-sig")
-    write_doc(args.master, waterfall, delta)
-    print(json.dumps({"doc": str(DOC_OUT), "waterfall": str(waterfall_out), "delta": str(delta_out)}, ensure_ascii=False, indent=2))
+    write_doc(args.master, waterfall, delta, args.doc_out, args.prefix)
+    print(json.dumps({"doc": str(args.doc_out), "waterfall": str(waterfall_out), "delta": str(delta_out)}, ensure_ascii=False, indent=2))
 
 
 if __name__ == "__main__":

@@ -63,6 +63,12 @@
 
 ## 当前判断
 
+### 2026-07-08 追加：strict Table 2 与 GLM471 补跑脚本
+
+- 新增 strict Table 2 master：`00_current/glm_table2_strict_master_20260708.md`。主规格 `paper_exact_*` 明确不含 `RD_Staff_ipo`，`RD_Staff_ipo` 只作为 `rd_staff_extra_*` 敏感性。
+- 新增 GLM remaining-to-471 source：`00_current/glm_remaining_to471_table2_source_20260708.md`。当前 GLM300 与 Table2 471 候选交集为 288 家，剩余 183 家、2733 个 chunk，已分 6 个 source shards。
+- 新增 BHAR/FSales 断点瀑布：`00_current/table2_bhar_fsales_waterfall_20260708.md`。当前读法：BHAR 从单变量到 full controls 一直为负，paper-exact 下约为 `-0.021`、接近原文；FSales_Growth 从单变量起就是正，优先怀疑 Y 字段/窗口。
+
 X measurement 已经从“明显不对”推进到“Table 1 量级基本可用的候选口径”，但还不能视为完整复刻：`GLM-4-32B + dewrap_join/GLM tokenizer chunking + cot_v3b_len132_tight + Summary_len_proxy + tail_merge + summary_floor=50` 在 GLM300 上仍能稳定贴近原文 Table 1，且 Panel B 正向判据成立；但 Table 2 经济后果只恢复了 `FInvention` 显著负向，`BHAR` 仍负向不显著，`FSales_Growth` 仍正向不显著。因此当前结论是 `MEASUREMENT_GATE_PASS_WEAK / TABLE2_NO_PASS_YET`。项目不能结题，下一步不能只靠继续扩样，要同时核对原文样本制度和 Y 精确定义。
 
 Table 2 仍是 `NO_PASS_YET`，现在最优先的问题从“单个 Y 怎么调”上移到“样本制度和 Y 精确定义是否对齐”：

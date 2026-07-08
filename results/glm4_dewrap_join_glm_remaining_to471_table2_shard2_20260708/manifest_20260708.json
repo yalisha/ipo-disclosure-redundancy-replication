@@ -1,0 +1,13 @@
+{
+  "created_at": "2026-07-08",
+  "purpose": "remaining Table2 471 firms not yet run by SiliconFlow GLM-4-32B",
+  "prompt_mode": "cot_v3b_len132_tight",
+  "firm_n": 31,
+  "chunk_n": 511,
+  "source_dirs": [
+    "glm4_dewrap_join_full543_20260705",
+    "glm4_dewrap_join_first_batch25_20260706"
+  ],
+  "selection_rule": "Table2 471 firms excluding completed firm metrics, sorted by first_trade_date and sec_code; take all remaining",
+  "suffix": "shard2"
+}
